@@ -161,15 +161,22 @@ img {
 
 
 
-/* For tablet: */
+/* For tablet: 
 @media only screen and (min-width: 539px), (max-width:849px) {
 
 
     .navigace {
-        flex-direction: column;
         display: flex;
-        width: 100%;
+        margin: auto;
+        margin: 0 2rem;
     }
+
+    .polozky {
+        margin: 0;
+        border-top: 0.2px solid #D5D5D5;
+        font-size: 0.9rem;
+        flex-grow: 1;
+        }
 
 
     .island1,
@@ -183,22 +190,40 @@ img {
     font-size: 1rem;
       }
 
-      .galerie {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 15vw);
-        grid-gap: 0px;
-  }
+ 
+      .foto {
+        position: relative;
+        margin: 0;
+        overflow: hidden;
+        cursor: pointer;
+}        
 
-  .popisek {
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 15vw);
+    grid-gap: 0px;
+} 
+
+.foto .popisek {
     background-color: rgb(50,50,50,0.7);
     position: absolute;
     width: 100%;
     transition: transform 0.3s ease-in;
     transform: translateY(100%);
-    bottom: 0;
-    
+    bottom: 0;    
 }     
+.popisek .copy{
+    color: white;
+}    
+
+.foto:hover img {
+    transform: scale(1.2);
+}    
+
+.foto:hover .popisek {
+    transform: translateY(0); 
+}  
 
       .paticka {
     font-size: 0.9rem;
@@ -208,7 +233,7 @@ img {
 
 
 
-/* For desktop: */
+/* For desktop:
 @media only screen and (min-width: 539px),(max-width:849px) {
     body {
         background-color: rgb(239,239,239);
@@ -244,23 +269,17 @@ img {
 
 
     .uvod {
-        margin: 2rem 1rem 0 0;
+        margin: 1rem 1rem 0 0;
     }   
 
     .navigace {
         flex-direction: column;
         display: flex;
+        float: left;
+        text-align: center;
     }
   
-    ul {
-        text-align: left;
-        margin-left: 2rem;
-         width: 18vw;   
-         padding: 0.8rem;
-         transition: all 0.3s ease-in;
-    }   
-
-    .uvodem {
+   .polozky {
         text-align: left;
         margin-left: 2rem;
          width: 18vw;   
@@ -316,7 +335,7 @@ img {
         grid-gap: 0px;
   } 
 
-    .popisek {
+    .foto .popisek {
         background-color: rgb(50,50,50,0.7);
         position: absolute;
         width: 100%;
