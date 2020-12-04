@@ -12,8 +12,6 @@ a {
 
 
 .header {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
@@ -122,10 +120,6 @@ ul {
     color:#252525 ;
 }
 
-img {
-    width: 100%;
-}
-
 .island1,
 .island2,
 .island3 {
@@ -153,10 +147,6 @@ h2 {
     line-height: 1.8;
     font-size: 0.9rem;
     color:#252525 ;
-}
-
-img {
-    width: 100%;
 }
 
 
