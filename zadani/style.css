@@ -64,12 +64,15 @@ img {
     flex-direction: column;
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
 .popisek {
     text-align: center;
     color: grey;
     margin-top: 0.5rem;
 }
-
 
 .paticka a,
 .popisek a {
@@ -151,7 +154,7 @@ h2 {
 
 
 
-/* For tablet:
+/* For tablet: */
 @media only screen and (min-width: 539px), (max-width:849px) {
 
 
@@ -223,7 +226,7 @@ h2 {
 
 
 
-/* For desktop: 
+/* For desktop: */
 @media only screen and (min-width: 539px),(max-width:849px) {
     body {
         background-color: rgb(239,239,239);
