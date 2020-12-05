@@ -151,7 +151,7 @@ h2 {
 
 
 
-/* For tablet: 
+/* For tablet: */
 @media only screen and (min-width: 539px), (max-width:849px) {
 
 
@@ -223,7 +223,7 @@ h2 {
 
 
 
-/* For desktop:
+/* For desktop: */
 @media only screen and (min-width: 539px),(max-width:849px) {
     body {
         background-color: rgb(239,239,239);
@@ -238,7 +238,7 @@ h2 {
     }
 
     .header {
-        height: 410px;
+        height: 400px;
         display: flex;
         flex-direction: column;
     }
@@ -259,25 +259,26 @@ h2 {
 
 
     .uvod {
-        margin: 1rem 1rem 0 0;
+        margin: 5rem 1rem 2rem 0;
+        padding: 1.6rem;
     }   
 
     .navigace {
         flex-direction: column;
         display: flex;
         float: left;
-        text-align: center;
     }
   
    .polozky {
-        text-align: left;
-        margin-left: 2rem;
-         width: 18vw;   
+        margin-left: 0rem;
+         width: 30vw;
+         height: 22vw;   
          padding: 0.8rem;
-         transition: all 0.3s ease-in;
-    }   
-
-
+    }  
+    
+    li {
+text-align: left;
+    }
 
     .procisland .text {
         width: 72%;
@@ -344,4 +345,9 @@ h2 {
     .foto:hover .popisek {
         transform: translateY(0); 
     }  
+
+    .paticka {
+        font-size: 1rem;
+        padding-left: 2rem;
+        }
 }
