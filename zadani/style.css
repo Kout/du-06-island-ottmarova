@@ -155,22 +155,29 @@ h2 {
 
 
 /* For tablet: */
-@media only screen and (min-width: 539px), (max-width:849px) {
+@media only screen and (min-width: 539px) and (max-width:849px) {
 
 
     .navigace {
-        display: flex;
         margin: auto;
-        margin: 0 2rem;
     }
 
     .polozky {
-        margin: 0;
         border-top: 0.2px solid #D5D5D5;
         font-size: 0.9rem;
-        flex-grow: 1;
         }
 
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 0.2px solid #D5D5D5;
+    }
+
+    li {
+        border-bottom: none;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 
     .island1,
     .island2,
@@ -227,7 +234,7 @@ h2 {
 
 
 /* For desktop: */
-@media only screen and (min-width: 539px),(max-width:849px) {
+@media only screen and (min-width: 850px) {
     body {
         background-color: rgb(239,239,239);
     }
@@ -237,7 +244,9 @@ h2 {
         margin: auto;
         box-shadow: #A7A7A7;
         box-shadow: 5px 2px 20px #888888;
+        background-color: white;
         transform: translateY(-1.5%);
+        margin-top: -50px;
     }
 
     .header {
@@ -270,6 +279,7 @@ h2 {
         flex-direction: column;
         display: flex;
         float: left;
+        height: 360px;
     }
   
    .polozky {
